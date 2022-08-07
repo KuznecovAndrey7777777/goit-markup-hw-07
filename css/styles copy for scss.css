@@ -1,5 +1,5 @@
 /* common */
-/*
+
 html {
   box-sizing: border-box;
 }
@@ -10,6 +10,15 @@ html {
   box-sizing: inherit;
 }
 
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
 
 :root {
   --primary-color: #212121;
@@ -47,7 +56,6 @@ body {
   overflow: hidden;
 }
 
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -76,18 +84,8 @@ p {
   margin-bottom: 0;
 }
 
-ul,
-li,
-a {
-  list-style: none;
-  text-decoration: none;
-  font-style: normal;
-  padding: 0;
-  margin: 0;
-}
-*/
 /* header nav section */
-/* 
+
 .header {
   border-bottom: 1px solid hsl(0, 0%, 93%);
 }
@@ -96,7 +94,7 @@ a {
   display: flex;
   align-items: center;
 }
-/* 
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -136,7 +134,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__icon {
+.comment__icon {
   display: inline-block;
   fill: currentColor;
   margin-right: 10px;
@@ -204,14 +202,8 @@ a {
   border-radius: 4px;
   background-color: var(--accent-color);
 }
-*/
+
 /* herro section */
-/* 
-.hero {
-  background-color: var(--grey-other);
-  text-align: center;
-  padding: 200px 0;
-}
 
 .hero__title {
   color: var(--background-white);
@@ -225,6 +217,12 @@ a {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero {
+  background-color: var(--grey-other);
+  text-align: center;
+  padding: 200px 0;
 }
 
 .button {
@@ -241,7 +239,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 
+
 .hero__button {
   display: inline-block;
   min-width: 200px;
@@ -266,9 +264,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-*/
+
 /* feature section */
-/*
+
 .feature__list {
   display: flex;
   gap: 30px;
@@ -308,9 +306,9 @@ a {
   margin-bottom: 0px;
   color: var(--background-grey);
 }
-*/
+
 /* what section */
-/*
+
 .what {
   padding-top: 0;
 }
@@ -343,9 +341,9 @@ a {
   color: var(--background-white);
   text-transform: uppercase;
 }
-*/
+
 /* team section*/
-/*
+
 .team {
   background-color: var(--grey-portfolio);
 }
@@ -388,9 +386,9 @@ a {
 .team__img.no-gap {
   display: block;
 }
-*/
+
 /* footer section*/
-/*
+
 .footer {
   background-color: var(--grey-other);
   padding-top: 60px;
@@ -406,18 +404,21 @@ a {
   margin-top: 20px;
 }
 
-.footer__map-address {
+.map-address {
+  color: var(--background-white);
+}
+
+.map-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   transition-property: color;
-  color: var(--background-white);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__map-address:hover,
-.footer__map-address:focus {
+.map-address:hover,
+.map-address:focus {
   color: var(--footer-accent);
 }
 
@@ -495,9 +496,9 @@ a {
 .button__footer:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-*/
+
 /* portfolio section */
-/*
+
 .portfolio__nav-list {
   display: flex;
   gap: 8px;
@@ -614,9 +615,9 @@ a {
 .portfolio__link:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-*/
+
 /* socials icon */
-/*
+
 .icons__list {
   display: flex;
   align-items: center;
@@ -625,8 +626,8 @@ a {
 }
 
 .team-socials {
-  color: var(--icons-colorgrey);
-  transition-property: background-color, color;
+color: var(--icons-colorgrey);
+transition-property: background-color, color;
 }
 
 .icons__link {
@@ -651,8 +652,8 @@ a {
 }
 
 .footer-link {
-  background-color: var(--icons-background-color);
-  transition-property: background-color;
+background-color: var(--icons-background-color);
+transition-property: background-color;
 }
 
 .footer-link:hover,
@@ -667,9 +668,9 @@ a {
 .footer-link:hover .footer-icons__socials {
   fill: var(--background-white);
 }
-*/
+
 /* client icon section */
-/*
+
 .client__list {
   display: flex;
   align-items: center;
@@ -700,9 +701,9 @@ a {
 .client__icon {
   fill: currentColor;
 }
-*/
+
 /* modal window section */
-/*
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -724,8 +725,6 @@ a {
   opacity: 0;
   pointer-events: none;
 }
-*/
-/*
 .modal {
   position: absolute;
   width: 528px;
@@ -887,4 +886,3 @@ a {
 .modal__form-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-*/
